@@ -1,1 +1,1 @@
-# Reto-de-programaci-n
+# Reto de programación

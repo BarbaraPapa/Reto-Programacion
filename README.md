@@ -1,8 +1,10 @@
-# Reto de programación De Manz-Dev https://lenguajehtml.com/challenge/
+## Esta es mi solución al Reto de programación de Manz-Dev 
+- La página del reto https://lenguajehtml.com/challenge/
+
 ---
 ## Este reto está dirigido al aprendizaje de HTML, es importante aprender las etiquetas así como la semántica y las buenas prácticas.
 ---
-Mi página con los retos resueltos.  https://barbarapapa.github.io/Reto-Programacion/
+Echale un vistazo a mi página con los retos resueltos  https://barbarapapa.github.io/Reto-Programacion/
 ---
 
 - Las instrucciones en la página de Manz-Dev

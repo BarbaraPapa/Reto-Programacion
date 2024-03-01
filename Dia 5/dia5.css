@@ -22,19 +22,34 @@ body {
   }
 
   & main {
+    background-color: #ffffff23;
+    border-radius: 0.5rem;
     max-width: 80rem;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    padding: 1rem;
+    padding: 3rem;
 
     & p {
       padding: 1.5rem;
+      font-size: 2rem;
+
+      & span{
+        color: #33c5df;
+        font-weight: bold
+      }
     }
 
-    & img {
-      width: 15rem;
-      border-radius: 1rem;
+    & div {
+      border: 2px solid rgb(8, 8, 8);
+      background-color: #efeded;
+      border-radius: 0.5rem;
+      padding: 0.6rem;
+
+      & code {
+        color: black;
+        font-size: 1.5rem;
+      }
     }
   }
 }

@@ -7,8 +7,6 @@
 Echale un vistazo a mi página con los retos resueltos  https://barbarapapa.github.io/Reto-Programacion/
 ---
 
-- Las instrucciones en la página de Manz-Dev
-
-![Screenshot 2024-02-28 163214](https://github.com/BarbaraPapa/Reto-Programacion/assets/103266205/473af77d-60b1-46df-a76a-2ccc89549fa3)
 
 
+![Screenshot 2024-03-04 232225](https://github.com/BarbaraPapa/Reto-Programacion/assets/103266205/4fe7613a-686f-481b-9e6b-1d215663f8cf)

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia 10</title>
+    <link rel="stylesheet" href="./dia10.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dia 10</h1>
+      <h2>
+        Inserta un video de Youtube en una página y estila con CSS para que se vea bien.
+      </h2>
+    </header>
+    <main>
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/8Jh2K3tq5n0"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="container">
+        <p>
+            Para insertar un vídeo de YouTube en una página utilizamos la etiqueta <code>&lt;iframe&gt;</code>
+        </p>
+        <p>
+            Al insertar un vídeo de YouTube, debes utilizar la URL de <span>embed</span>, no la URL normal del vídeo.
+        </p>
+        <p>Cómo hacerlo:</p>
+        <ul>
+            <li>Va a la página del vídeo en YouTube</li>
+            <li>Haz clic en el botón "Compartir" debajo del video</li>
+            <li>Selecciona la opción "Embed"</li>
+            <li>Copia el código iframe proporcionado</li>
+        </ul>
+        <p>
+            Yo también agregué <span>frameborder="0"</span> para eliminar el borde del marco y <span>allowfullscreen</span> para permitir la visualización en pantalla completa. 
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

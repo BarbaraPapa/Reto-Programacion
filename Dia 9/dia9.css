@@ -6,11 +6,6 @@
 }
 
 body {
-  --one: red;
-  --two: rgb(6, 194, 6);
-  --three: #070797;
-  --four: yellow;
-  --color: linear-gradient(to right, #df13df, yellow);
   --background: #093a75;
   --background-ligth: #ffffff23;
   --text: #efeded;
@@ -28,20 +23,23 @@ body {
       padding: 2rem;
       font-size: 3rem;
     }
-    & h2{
+    & h2 {
       width: 50ch;
       margin: 0 auto;
     }
   }
 
-  p {
+  & nav {
     margin: 0 auto;
     font-size: 2rem;
-    max-width: 50rem;
+    max-width: 80rem;
     background-color: var(--background-ligth);
-    padding: 2rem;
+    padding: 5rem;
     border-radius: 1rem;
 
-    
+    & span {
+      color: #f74747;
+    }
+
   }
 }

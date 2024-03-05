@@ -24,6 +24,7 @@ body {
   }
 
   & nav {
+   padding-bottom: 10rem;
     max-width: 80rem;
     margin: 0 auto;
 
@@ -51,6 +52,17 @@ body {
           background-color: black;
         }
       }
+    }
+  }
+
+  footer{
+    background-color: black;
+    color: #7c7c7c;
+    text-align: center;
+    padding: 1rem;
+    & a{
+      text-decoration: none;
+      color: rgba(255, 0, 0, 0.522);
     }
   }
 }

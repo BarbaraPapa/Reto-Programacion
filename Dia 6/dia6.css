@@ -33,13 +33,11 @@ body {
       width: 42rem;
 
       & summary {
-        /* border: 2px solid red; */
         font-size: 1.5rem;
         padding: 1rem;
       }
 
       & div {
-        /* border: 2px solid green; */
         padding: 1rem;
 
         & .example {
@@ -49,7 +47,7 @@ body {
           margin-top: 0.5rem;
         }
         & span{
-            color: red;
+            color: #fa4b4b;
         }
       }
     }

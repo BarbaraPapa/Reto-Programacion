@@ -12,7 +12,7 @@ body {
   --four: yellow;
   --color: linear-gradient(to right, #df13df, yellow);
   --background: #093a75;
-  --background-ligth: #ffffff23;
+  --background-ligth:#ffffff23;
   --text: #efeded;
 
   background-color: var(--background);
@@ -37,5 +37,27 @@ body {
     background-color: var(--background-ligth);
     padding: 2rem;
     border-radius: 1rem;
+
+    & span {
+      font-weight: bold;
+    }
+    & .one {
+      color: var(--one);
+    }
+    & .two {
+      color: var(--two);
+    }
+    & .three {
+      color: var(--three);
+    }
+    & .four {
+      color: var(--four);
+    }
+    & .color {
+      background: var(--color);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
   }
 }

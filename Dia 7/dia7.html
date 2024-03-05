@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dia7.css" />
+    <title>Dia 7</title>
+  </head>
+  <body>
+    <header>
+      <h1>Dia 7</h1>
+      <h2>
+        Coloca una imagen en formato JPEG-XL. Si el navegador no la soporta, que
+        use AVIF. Sino, que use JPG.
+      </h2>
+    </header>
+    <main>
+        <div>
+            <p>
+                Para solucionar este problema podemos utilizar la etiqueta <span>< picture ></span>.
+                Dentro debemos usar la etiqueta <span>< source ></span>, que le indicará al navegador que
+                intente leer la imagen si es compatible. También usaremos la etiqueta
+            <span>< img ></span> que será la última que se compruebe.
+            </p>
+            <div class="example">
+                <code>
+                < picture> <br>
+                    < source srcset="imagen.jpeg-xl" type="image/jxl" /> <br>
+                    < source srcset="imagen.avif" type="image/avif" /> <br>
+                    < img src="imagen.jpg" alt="Descripción de la imagen"/> <br>
+                < picture/>
+                </code>
+            </div>
+        </div>
+        
+      <picture>
+        <source srcset="./panda-hacker .jxl" type="image/jxl" />
+        <source srcset="./panda-hacker.avif" type="image/avif" />
+        <img
+          src="./panda-hacker.jpg"
+          alt="Dibujo de un panda con una sudadera con capucha hackeando con una computadora"
+        />
+      </picture>
+    </main>
+  </body>
+</html>

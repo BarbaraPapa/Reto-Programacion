@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia 13</title>
+    <link rel="stylesheet" href="./dia13.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dia 13</h1>
+      <h2>
+        Crea una barra medidora que muestre los tickets vendidos en un cine
+        (64/100 tickets vendidos).
+      </h2>
+    </header>
+    <main class="container">
+      <div>
+        <label>64/100 tickets vendidos</label>
+        <meter
+          value="64"
+          min="0"
+          max="100"
+          optimum="100"
+          low="25"
+          high="60"
+        ></meter>
+      </div>
+      <div>
+        <label>10/100 tickets vendidos</label>
+        <meter
+          value="10"
+          min="0"
+          max="100"
+          optimum="100"
+          low="25"
+          high="60"
+        ></meter>
+      </div>
+      <div>
+        <label>50/100 tickets vendidos</label>
+        <meter
+          value="50"
+          min="0"
+          max="100"
+          optimum="100"
+          low="25"
+          high="60"
+        ></meter>
+      </div>
+    </main>
+    <section>
+      <p>
+        Para crear una barra medidora usamos la etiqueta
+        <span> < meter ></span>. Usamos los atributos <span>min</span> y
+        <span>max</span> que serán el rango de la barra y el atributo
+        <span>value</span> que en nuestro caso es el número de entradas
+        vendidas.
+      </p>
+      <p>
+        Si agregamos los atributos <span>low</span>, <span>high</span> y
+        <span>optimum</span> tendremos diferentes colores dependiendo del número
+        de entradas vendidas
+      </p>
+    </section>
+
+    <div class="code">
+      <code>
+        <code>&lt;meter value="64" min="0" max="100" optimum="100" low="25" high="60"&gt;&lt;/meter&gt;</code>
+      </code>
+    </div>
+  </body>
+</html>

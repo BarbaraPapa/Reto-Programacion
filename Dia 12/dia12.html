@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia 12</title>
+    <link rel="stylesheet" href="./dia12.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dia 12</h1>
+      <h2>
+        Crea un slider que permita seleccionar un número entre 1-50 y lo muestre
+        en vivo al cambiar.
+      </h2>
+    </header>
+    <div class="slider-container">
+      <input
+        type="range"
+        min="1"
+        max="50"
+        onInput="this.nextElementSibling.value = this.value"
+      />
+      <output>25</output>
+    </div>    
+    <main>
+      <p>
+        Para crear un slider con html podemos usar la etiqueta
+        <span>< input ></span> con <span>type="range"</span> donde también
+        podemos insertar un mínimo(min) y un máximo(max), por defecto los
+        valores van de 0 a 100.
+      </p>
+      <p>
+        Podemos agregar un <span>< output ></span> para agregar el valor del
+        <span>< input ></span> y actualizarla usando una sola línea de
+        Javascript
+        <span>onInput="this.nextElementSibling.value = this.value"</span>
+      </p>
+      <div class="code">       
+        <code>
+          &lt;input type="range"  min="1" max="50" 
+            onInput="this.nextElementSibling.value = this.value"
+          /&gt;
+          &lt;output&gt; &lt;/output&gt;
+        </code>
+      </div>
+    </main>
+  </body>
+</html>

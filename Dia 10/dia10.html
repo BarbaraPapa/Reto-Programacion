@@ -10,35 +10,94 @@
     <header>
       <h1>Dia 10</h1>
       <h2>
-        Inserta un video de Youtube en una página y estila con CSS para que se vea bien.
+        Inserta un video de Youtube en una página y estila con CSS para que se
+        vea bien.
       </h2>
     </header>
     <main>
       <div class="video-container">
         <iframe
-          src="https://www.youtube.com/embed/8Jh2K3tq5n0"
+          src="https://www.youtube.com/embed/Izp9lZna_z8?si=VaMkGZRkIPrvXgH0"
           frameborder="0"
           allowfullscreen
         ></iframe>
       </div>
       <div class="container">
         <p>
-            Para insertar un vídeo de YouTube en una página utilizamos la etiqueta <code>&lt;iframe&gt;</code>
+          Para insertar un vídeo de YouTube en una página utilizamos la etiqueta
+          <code>&lt;iframe&gt;</code>
         </p>
         <p>
-            Al insertar un vídeo de YouTube, debes utilizar la URL de <span>embed</span>, no la URL normal del vídeo.
+          Al insertar un vídeo de YouTube, debes utilizar la URL de
+          <span>embed</span>, no la URL normal del vídeo.
         </p>
         <p>Cómo hacerlo:</p>
         <ul>
-            <li>Va a la página del vídeo en YouTube</li>
-            <li>Haz clic en el botón "Compartir" debajo del video</li>
-            <li>Selecciona la opción "Embed"</li>
-            <li>Copia el código iframe proporcionado</li>
+          <li>Va a la página del vídeo en YouTube</li>
+          <li>Haz clic en el botón "Compartir" debajo del video</li>
+          <li>Selecciona la opción "Embed"</li>
+          <li>Copia el código iframe proporcionado</li>
         </ul>
         <p>
-            Yo también agregué <span>frameborder="0"</span> para eliminar el borde del marco y <span>allowfullscreen</span> para permitir la visualización en pantalla completa. 
+          Yo agregué <span>frameborder="0"</span> para eliminar el borde del
+          marco y <span>allowfullscreen</span> para permitir la visualización en
+          pantalla completa.
         </p>
       </div>
     </main>
+
+    <section>
+      <div class="tv">
+        <div class="pantalla-tv">
+          <iframe
+            name="marco"
+            src="https://www.youtube.com/embed/8Jh2K3tq5n0"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <div class="canales">
+            <a
+              href="https://www.youtube.com/embed/8feDtKE1y4U?si=J3bP9xjZ3T4wr5M5"
+              target="marco"
+              >C 1</a
+            >
+            <a
+              href="https://www.youtube.com/embed/Izp9lZna_z8?si=VaMkGZRkIPrvXgH0"
+              target="marco"
+              >C 2</a
+            >
+            <a
+              href="https://www.youtube.com/embed/ckl7nhVduJY?si=ObCRsz9sBVpu35ZT"
+              target="marco"
+              >C 3</a
+            >
+            <a
+              href="https://www.youtube.com/embed/Aq_VPZ4oTAs?si=v4xUtK47IIMwedeE"
+              target="marco"
+              >C 4</a
+            >
+            <a href="https://www.youtube.com/embed/8Jh2K3tq5n0" target="marco"
+              >C 5</a
+            >
+          </div>
+        </div>
+        <img src="./traced-old-TV.png" alt="dibujo de una televisión vieja" />
+      </div>
+
+      <div class="container">
+        <h2>
+          Busca 5 videos de youtube. Inserta uno en la página. Haz que se pueda
+          cambiar entre ellos como una TV.
+        </h2>
+        <p>Como Manz pensó que el primero era demasiado fácil, lo cambió por este.</p>
+        <p>Vale, me lo tomé literal 😅</p>
+        <p>
+          Podemos usar el atributo <span>name</span> para nombrar el marco y
+          cargar diferentes URL a través de una etiqueta <span>< a ></span> en
+          la que usamos el atributo <span>target</span> para referirnos al
+          marco.
+        </p>
+      </div>
+    </section>
   </body>
 </html>

@@ -29,18 +29,21 @@ body {
     }
   }
 
-  & main {
+  & main,
+  section {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
     margin-top: 3rem;
+    max-width: 1500px;
+    margin: 0 auto;
 
     & iframe {
       border-radius: 0.2rem;
       /* added aspect ratio and deleted width and height from html  */
       aspect-ratio: 16 / 9;
-      width: 850px;
+      width: 650px;
     }
 
     & .container {
@@ -49,6 +52,11 @@ body {
       background-color: var(--background-ligth);
       padding: 2rem;
       border-radius: 0.2rem;
+
+      & h2 {
+        font-size: 1.5rem;
+        color: #021b6f;
+      }
 
       & p {
         margin-top: 1rem;
@@ -60,8 +68,59 @@ body {
 
       & ul {
         margin-left: 1rem;
-        & li{
-            color: #021b6f;
+        & li {
+          color: #021b6f;
+        }
+      }
+    }
+  }
+
+
+  /* television */
+  .tv {
+    position: relative;
+
+    & img {
+      width: 900px;
+    }
+
+    & .pantalla-tv {
+      display: flex;
+      gap: 1rem;
+      position: absolute;
+      bottom: 230px;
+      left: 120px;
+
+      & iframe {
+        border-radius: 1rem;
+        aspect-ratio: 16 / 9;
+        width: 600px;
+        border: 10px solid black;
+      }
+
+      & .canales {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+
+        & a {
+          background-color: #b6b3b3;
+          border: 5px solid black;
+          color: black;
+          text-decoration: none;
+          font-weight: bolder;
+          padding: 0.5rem;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        & a:hover{
+          background-color: #838181;
         }
       }
     }

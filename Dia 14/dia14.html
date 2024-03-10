@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia 14</title>
+    <link rel="stylesheet" href="./dia14.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dia 14</h1>
+      <h2>
+        Muestra un bloque de fragmento de código CSS en una página. Si quieres
+        ir al máximo, añade una librería Javascript para añadirle resaltado de
+        colores.
+      </h2>
+    </header>
+    <main>
+      <section>
+        <p>
+          Para mostrar este bloque de código utilicé la etiqueta <span>< pre ></span> con la
+          etiqueta <span>< code ></span> dentro. También utilicé una clase específica para
+          indicar el lenguaje del código. Para darle color al código puedes usar
+          una biblioteca javascript
+        </p>
+      </section>
+      <div class="code">
+        <pre>
+        <code class="language-javascript">
+          const grabImage = (e) => {
+            e.stopPropagation();
+            const link = e.target.files[0];
+            setPreview(link);
+            dispatch({
+              type: "setReciept",
+              payload: URL.createObjectURL(e.target.files[0]),
+            });
+            setIsUploaded(true);
+          };
+        </code>
+      </pre>
+      </div>
+    </main>
+    <!-- color code  -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-shades-of-purple.css"
+    />
+    <script type="module">
+      Prism.highlightAll();
+    </script>
+  </body>
+</html>

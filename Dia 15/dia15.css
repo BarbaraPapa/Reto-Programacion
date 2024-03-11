@@ -9,7 +9,7 @@ body {
   --background: #093a75;
   --background-ligth: #ffffff23;
   --text: #efeded;
-  --span:#f74747;
+  --span: #f74747;
 
   background-color: var(--background);
   color: var(--text);
@@ -24,22 +24,38 @@ body {
       padding: 2rem;
       font-size: 3rem;
     }
-    & h2{
+    & h2 {
       width: 50ch;
       margin: 0 auto;
     }
   }
 
-  p {
+  & main {
     margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+
+    & video {
+      width: 40rem;
+      border-radius: 0.3rem;
+    }
+  }
+
+  & section {
     font-size: 1.5rem;
     max-width: 50rem;
     background-color: var(--background-ligth);
     padding: 2rem;
-    border-radius: 1rem;
+    border-radius: 0.3rem;
 
-    & span{
+    & span {
       color: var(--span);
+    }
+
+    & .code {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: black;
     }
   }
 }

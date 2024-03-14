@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  --background: #093a75;
+  --background-ligth: #ffffff23;
+  --text: #efeded;
+  --span: #f74747;
+  --secondary-text: #83eeee;
+
+  background-color: var(--background);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+
+  & .reto {
+    text-align: center;
+    padding: 4rem;
+
+    & h1 {
+      padding: 2rem;
+      font-size: 3rem;
+    }
+    & h2 {
+      width: 50ch;
+      margin: 0 auto;
+    }
+  }
+
+  /* prensa */
+  & div {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+
+    & ul{
+      list-style-type: none;
+      & li{
+        margin-bottom: 2rem;
+      }
+    }
+
+    & a{
+      color: var(--secondary-text);
+      text-decoration: none;
+      font-weight: bold;
+      &:hover{
+        color: var(--text);
+      }
+    }
+  }
+
+  & aside {
+    background-color: #3c3c3c;
+    border-right: 2px solid #59595a;
+    flex: 1;
+    max-width: 10%;
+    padding: 5rem 0rem 0 3rem;
+
+    & nav {
+      /* position: sticky; */
+      position: fixed;
+    }
+  }
+
+  & .articles-container {
+    flex: 1;
+    max-width: 50%;
+    padding: 5rem 0 0 8rem;
+    background-color: #3c3c3c;
+
+    & h1 {
+      color: var(--secondary-text);
+      font-size: 2rem;
+    }
+
+    & h2 {
+      font-size: 2rem;
+      margin-bottom: 4rem;
+      color: #c252fa;
+    }
+
+    & h3 {
+      color: var(--secondary-text);
+      max-width: 60ch;
+    }
+
+    & article {
+      margin-bottom: 4rem;
+
+      & p {
+        margin-top: 1rem;
+        max-width: 80ch;
+      }
+    }
+  }
+
+  & footer {
+    color: #83b8ee;
+   margin-bottom: 3rem; 
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia 23</title>
+    <link rel="stylesheet" href="./dia23.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dia 23</h1>
+      <h2>
+        Crea un formulario que te permita elegir un día entre el 15/nov y el
+        15/dic.
+      </h2>
+    </header>
+    <main>
+      <p>
+        Podemos usar un <span>< input type="date" ></span> y usar los atributos <span>min</span> y <span>max</span> para establecer la
+        fecha mínima y la fecha máxima que el usuario puede seleccionar.
+      </p>
+      <p class="note">
+        <span class="important">Nota importante:</span> Cuando necesitamos
+        recopilar los datos seleccionados por el usuario para enviarlos al
+        servidor, envolvemos todo dentro de la etiqueta <span>< form ></span>
+      </p>
+      <form>
+        Selecciona la fecha deseada
+        <input type="date" min="2024-11-15" max="2024-12-15" />
+      </form>
+    </main>
+  </body>
+</html>

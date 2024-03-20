@@ -19,7 +19,6 @@ body {
   & header {
     text-align: center;
     padding: 4rem;
-    margin: 0 auto;
 
     & h1 {
       padding: 2rem;
@@ -27,6 +26,7 @@ body {
     }
     & h2 {
       width: 50ch;
+      margin: 0 auto;
     }
   }
 
@@ -36,17 +36,10 @@ body {
     background-color: var(--background-ligth);
     padding: 2rem;
     border-radius: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 
     & span {
       color: var(--span);
-    }
-  }
-
-  & .note {
-    background-color: black;
-    & .important {
-      color: #e5ff00;
     }
   }
 
@@ -54,14 +47,33 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
 
-  & input {
-    padding: 10px;
-    font-size: 1rem;
-    background-color: #80dbff;
-    border: none;
-    border-radius: 5px;
-    width: 20rem;
+    & .note {
+      background-color: black;
+      & .important {
+        color: #e5ff00;
+      }
+    }
+
+    & form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50rem;
+      font-size: 1.5rem;
+      background-color: var(--background-ligth);
+      padding: 2rem;
+      border-radius: 1rem;
+    }
+
+    & input {
+      padding: 10px;
+      font-size: 1rem;
+      background-color: #80dbff;
+      border: none;
+      border-radius: 5px;
+      width: 10rem;
+      margin-left: 1rem;
+    }
   }
 }

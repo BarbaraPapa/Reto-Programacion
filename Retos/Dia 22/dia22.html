@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia 22</title>
+    <link rel="stylesheet" href="./dia22.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dia 22</h1>
+      <h2>
+        En la lista anterior (Dia 21), permite al usuario introducir opciones
+        personalizadas (no sólo las de la lista) y filtrar las opciones
+        existentes.
+      </h2>
+    </header>
+    <main>
+      <p>
+        Es posible crear este tipo de control mediante la etiqueta <span>< datalist ></span>,
+        utilicemos la etiqueta <span>< input type="text" ></span> para permitir al usuario
+        introducir texto. 
+      </p>
+      <p class="note">
+        <span class="important">Nota importante:</span> el
+        <span>< datalist ></span> y el <span>< input ></span> generalmente se usan dentro de la etiqueta
+        <span>< form ></span> cuando necesitamos recopilar los datos
+        seleccionados por el usuario y enviarlos al servidor.
+      </p>
+      <input type="text" list="items" placeholder="Selecciona" />
+      <datalist id="items">
+        <option value="Labrador Retriever">Labrador Retriever</option>
+        <option value="Pastor Alemán">Pastor Alemán</option>
+        <option value="Chihuahua">Chihuahua</option>
+        <option value="Bulldog Francés">Bulldog Francés</option>
+        <option value="Siames">Siames</option>
+        <option value="Maine Coon">Maine Coon</option>
+        <option value="Bengalí">Bengalí</option>
+        <option value="Andaluz">Andaluz</option>
+        <option value="Pura Sangre Inglés">Pura Sangre Inglés</option>
+        <option value="Árabe">Árabe</option>
+        <option value="Frisón">Frisón</option>
+        <option value="Appaloosa">Appaloosa</option>
+      </datalist>
+    </main>
+  </body>
+</html>

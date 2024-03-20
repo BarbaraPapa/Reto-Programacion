@@ -43,6 +43,13 @@ body {
     }
   }
 
+  & .note{
+    background-color: black;
+    & .important{
+      color: #e5ff00;
+    }
+  }
+
   & main {
     display: flex;
     flex-direction: column;

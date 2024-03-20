@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia 21</title>
+    <link rel="stylesheet" href="./dia21.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dia 21</h1>
+      <h2>
+        Crea una lista desplegable donde se pueda seleccionar entre 3 grupos de
+        productos ficticios.
+      </h2>
+    </header>
+    <main>
+      <p>
+        Utilizamos la etiqueta <span>< select ></span> para crear la lista
+        desplegable. Cada grupo está dentro de la etiqueta
+        <span>< optgroup ></span> con un <span>label</span>. Cada opción dentro
+        de la lista desplegable se define con la etiqueta
+        <span>< option ></span>, donde especificamos el <span>value</span>.
+      </p>
+      <select>
+        <option disabled selected>Selecciona un animal</option>
+        <optgroup label="Perros">
+          <option value="1">Labrador Retriever</option>
+          <option value="2">Pastor Alemán</option>
+          <option value="3">Chihuahua</option>
+          <option value="4">Bulldog Francés</option>
+        </optgroup>
+        <optgroup label="Gatos">
+          <option value="1">Siames</option>
+          <option value="2">Maine Coon</option>
+          <option value="3">Bengalí</option>
+        </optgroup>
+        <optgroup label="Caballos">
+          <option value="1">Andaluz</option>
+          <option value="2">Pura Sangre Inglés</option>
+          <option value="3">Árabe</option>
+          <option value="4">Frisón</option>
+          <option value="5">Appaloosa</option>
+        </optgroup>
+      </select>
+    </main>
+  </body>
+</html>

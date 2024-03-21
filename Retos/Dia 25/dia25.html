@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia 25</title>
+    <link rel="stylesheet" href="./dia25.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dia 25</h1>
+      <h2>
+        Crea una galería de fotos. Asegúrate que no se cargan si están fuera de
+        la región visible del navegador.
+      </h2>
+    </header>
+    <main>
+      <p>
+        Para garantizar que las imágenes se carguen solo cuando estén en la
+        región visible del navegador, podemos agregar el atributo <span>loading</span> con un
+        valor <span>lazy</span> en la etiqueta <span>< img ></span>.
+      </p>
+      <div class="imgContainer">
+        <img src="./images/panda-hacker.jpg" loading="lazy" alt="Dibujo de un panda con una sudadera con capucha hackeando con una computadora" />
+        <img src="./images/panda.jpg" loading="lazy" alt="Dibujo de un panda meditando" />
+        <img src="./images/panda2.jpg" loading="lazy" alt="Dibujo de un panda aferrado a una rama de bambú" />
+      </div>
+    </main>
+  </body>
+</html>

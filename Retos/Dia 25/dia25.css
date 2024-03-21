@@ -60,5 +60,18 @@ body {
         border-radius: 0.5rem;
         border: none;
     }
+
+    & button{
+      background-color: #7fff5f;
+      font-weight: bold;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      border: none;
+      cursor: pointer;
+
+      &:hover{
+        background-color: #2fe102;
+      }
+    }
   }
 }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia 25</title>
+    <link rel="stylesheet" href="./dia25.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dia 25</h1>
+      <h2>
+        Crea un formulario de registro que valide si el username escrito es
+        válido (sólo letras y números) o no.
+      </h2>
+    </header>
+    <main>
+      <p>
+        Añadimos el atributo <span>pattern</span> al
+        <span>input</span> indicando que tipo de validación queremos.<br />
+        En este caso usé <span>pattern="[a-zA-Z0-9]+"</span><br />
+        <span>a-zA-Z</span> indica que el campo puede contener letras mayúsculas
+        y minúsculas, mientras que <span>0-9</span> indica que puede contener
+        números del 0 al 9. El <span>+</span> al final indica que el campo debe
+        contener al menos un carácter.
+      </p>
+      <form>
+        <input
+          type="text"
+          placeholder="Nombre"
+          pattern="[a-zA-Z0-9 ]+"
+          title="Solo letras y números son permitidos"
+          required
+        />
+        <input type="submit" value="Registrarse" />
+      </form>
+    </main>
+  </body>
+</html>

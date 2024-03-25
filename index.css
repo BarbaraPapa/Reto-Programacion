@@ -18,8 +18,8 @@ body {
       font-size: 3rem;
     }
 
-    & h2 {
-      color: aqua;
+    & img{
+      max-width: 70rem;
     }
   }
 
@@ -39,7 +39,7 @@ body {
         display: flex;
 
         & a {
-          border: 2px solid red;
+          border: 2px solid #cb31bc;
           border-radius: 0.5rem;
           padding: 0.5rem;
           text-decoration: none;
@@ -62,7 +62,7 @@ body {
     padding: 1rem;
     & a{
       text-decoration: none;
-      color: rgba(255, 0, 0, 0.522);
+      color: #ff000085;
     }
   }
 }

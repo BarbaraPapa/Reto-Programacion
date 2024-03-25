@@ -1,88 +1,55 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+main {
+  margin: 0 auto;
+  font-size: 1.5rem;
+  max-width: 50rem;
+  background-color: var(--background-ligth);
+  padding: 2rem;
+  border-radius: 1rem;
 
-body {
-  --background: #093a75;
-  --background-ligth: #ffffff23;
-  --text: #efeded;
-  --span: #f74747;
+  & div {
+    display: flex;
+    justify-content: space-around;
 
-  background-color: var(--background);
-  color: var(--text);
-  display: flex;
-  flex-direction: column;
+    & header {
+      width: 50%;
+      text-align: start;
+      padding: 0rem;
 
-  & header {
-    text-align: center;
-    padding: 4rem;
+      & h1 {
+        color: #2adcde;
+        padding: 2rem 0;
+        font-size: 2.5rem;
+      }
 
-    & h1 {
-      padding: 2rem;
-      font-size: 3rem;
+      & img {
+        max-width: 100%;
+        border-radius: 0.3rem;
+      }
     }
-    & h2 {
-      width: 55ch;
-      margin: 0 auto;
+
+    & section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+
+      & span {
+        font-weight: bold;
+        color: #2adcde;
+      }
     }
   }
 
-  main {
-    margin: 0 auto;
-    font-size: 1.5rem;
-    max-width: 50rem;
-    background-color: var(--background-ligth);
-    padding: 2rem;
-    border-radius: 1rem;
+  & footer {
+    margin: 2rem 0 0 1rem;
 
-    & div {
-      display: flex;
-      justify-content: space-around;
+    & a {
+      text-decoration: none;
+      color: #55beeb;
+      font-weight: bold;
 
-      & header {
-        width: 50%;
-        text-align: start;
-        padding: 0rem;
-
-        & h1 {
-          color: #2adcde;
-          padding: 2rem 0;
-          font-size: 2.5rem;
-        }
-
-        & img {
-          max-width: 100%;
-          border-radius: 0.3rem;
-        }
-      }
-
-      & section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 1rem;
-
-        & span {
-          font-weight: bold;
-          color: #2adcde;
-        }
-      }
-    }
-
-    & footer {
-      margin: 2rem 0 0 1rem;
-
-      & a {
-        text-decoration: none;
-        color: #55beeb;
-        font-weight: bold;
-
-        &:hover {
-          color: #2adcde;
-        }
+      &:hover {
+        color: #2adcde;
       }
     }
   }

@@ -6,36 +6,38 @@
 }
 
 body {
+  --one: red;
+  --two: rgb(6, 194, 6);
+  --three: #070797;
+  --four: yellow;
+  --color: linear-gradient(to right, #df13df, yellow);
   --background: #093a75;
   --background-ligth: #ffffff23;
   --text: #efeded;
-  --span:#f74747;
+  --span: #f74747;
 
-  background-color: #ccc;
+  background-color: var(--background);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
 
   & header {
-    background-color: var(--background);
-    color: var(--text);
-    border-radius: 1rem;
-    max-width: 40rem;
-    min-height: 40rem;
-    margin: 10rem auto;
+    margin: 0 auto;
+    max-width: 50rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding: 4rem;
+    gap: 1rem;
 
     & h1 {
-      padding: 2rem;
-      font-size: 5rem;
+      font-size: 3rem;
+    }
+    & h2 {
+      width: 40ch;
     }
 
-    & p {
-      font-size: 1.5rem;
-      max-width: 30ch;
-    }
-
-    & .volver{
+    & .volver {
+      width: fit-content;
       text-decoration: none;
       color: var(--span);
       font-size: 1.3rem;

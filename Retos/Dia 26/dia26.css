@@ -1,76 +1,43 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+p {
+  margin: 2rem auto;
+  font-size: 1.5rem;
+  max-width: 50rem;
+  padding: 2rem;
+  border-radius: 1rem;
+
+  & span {
+    color: var(--span);
+  }
 }
 
-body {
-  --background: #093a75;
-  --background-ligth: #ffffff23;
-  --text: #efeded;
-  --span: #f74747;
+& main {
+  margin: 2rem auto;
 
-  background-color: var(--background);
-  color: var(--text);
-  display: flex;
-  flex-direction: column;
-
-  & header {
-    text-align: center;
-    padding: 4rem;
-
-    & h1 {
-      padding: 2rem;
-      font-size: 3rem;
-    }
-    & h2 {
-      width: 50ch;
-      margin: 0 auto;
-    }
-  }
-
-  p {
-    margin: 2rem auto;
+  & button {
+    background-color: #42fcfc;
+    border: none;
+    border-radius: 0.5rem;
     font-size: 1.5rem;
-    max-width: 50rem;
-    padding: 2rem;
-    border-radius: 1rem;
-
-    & span {
-      color: var(--span);
+    font-weight: bold;
+    padding: 0.5rem;
+    cursor: pointer;
+    &:hover {
+      background-color: #2bc3ff;
     }
   }
 
-  & main {
-    margin: 2rem auto;
+  & [popover] {
+    background: #1b3049;
+    color: var(--text);
+    border-radius: 1rem;
+    width: 60rem;
+    line-height: 1.5;
+  }
 
-    & button{
-        background-color: #42fcfc;
-        border: none;
-        border-radius: 0.5rem;
-        font-size: 1.5rem;
-        font-weight: bold;
-        padding: 0.5rem;
-        cursor: pointer;
-        &:hover{
-            background-color: #2bc3ff;
-        }
-    }
-
-    & [popover] {
-      background: #1b3049;
-      color: var(--text);
-      border-radius: 1rem;
-      width: 60rem;
-      line-height: 1.5;
-    }
-
-    & #message[popover] {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
+  & #message[popover] {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }

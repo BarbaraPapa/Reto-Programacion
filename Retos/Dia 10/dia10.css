@@ -1,127 +1,94 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-  --background: #093a75;
-  --background-ligth: #ffffff23;
-  --text: #efeded;
-
-  background-color: var(--background);
-  color: var(--text);
+main,
+section {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  max-width: 1500px;
+  margin: 0 auto;
 
-  & header {
-    text-align: center;
-    padding: 4rem;
-
-    & h1 {
-      padding: 2rem;
-      font-size: 3rem;
-    }
-    & h2 {
-      width: 50ch;
-      margin: 0 auto;
-    }
+  & iframe {
+    border-radius: 0.2rem;
+    /* added aspect ratio and deleted width and height from html  */
+    aspect-ratio: 16 / 9;
+    width: 650px;
   }
 
-  & main,
-  section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 3rem;
-    max-width: 1500px;
-    margin: 0 auto;
+  & .container {
+    font-size: 1.5rem;
+    max-width: 50rem;
+    background-color: var(--background-ligth);
+    padding: 2rem;
+    border-radius: 0.2rem;
 
-    & iframe {
-      border-radius: 0.2rem;
-      /* added aspect ratio and deleted width and height from html  */
-      aspect-ratio: 16 / 9;
-      width: 650px;
+    & h2 {
+      font-size: 1.5rem;
+      color: #021b6f;
     }
 
-    & .container {
-      font-size: 1.5rem;
-      max-width: 50rem;
-      background-color: var(--background-ligth);
-      padding: 2rem;
-      border-radius: 0.2rem;
+    & p {
+      margin-top: 1rem;
 
-      & h2 {
-        font-size: 1.5rem;
+      & span {
+        color: #fb4646;
+      }
+    }
+
+    & ul {
+      margin-left: 1rem;
+      & li {
         color: #021b6f;
       }
-
-      & p {
-        margin-top: 1rem;
-
-        & span {
-          color: #fb4646;
-        }
-      }
-
-      & ul {
-        margin-left: 1rem;
-        & li {
-          color: #021b6f;
-        }
-      }
     }
   }
+}
 
+/* television */
+.tv {
+  position: relative;
 
-  /* television */
-  .tv {
-    position: relative;
+  & img {
+    width: 900px;
+  }
 
-    & img {
-      width: 900px;
+  & .pantalla-tv {
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 230px;
+    left: 120px;
+
+    & iframe {
+      border-radius: 1rem;
+      aspect-ratio: 16 / 9;
+      width: 600px;
+      border: 10px solid black;
     }
 
-    & .pantalla-tv {
+    & .canales {
       display: flex;
-      gap: 1rem;
-      position: absolute;
-      bottom: 230px;
-      left: 120px;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.5rem;
 
-      & iframe {
-        border-radius: 1rem;
-        aspect-ratio: 16 / 9;
-        width: 600px;
-        border: 10px solid black;
+      & a {
+        background-color: #b6b3b3;
+        border: 5px solid black;
+        color: black;
+        text-decoration: none;
+        font-weight: bolder;
+        padding: 0.5rem;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
-      & .canales {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 0.5rem;
-
-        & a {
-          background-color: #b6b3b3;
-          border: 5px solid black;
-          color: black;
-          text-decoration: none;
-          font-weight: bolder;
-          padding: 0.5rem;
-          width: 60px;
-          height: 60px;
-          border-radius: 50%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        & a:hover{
-          background-color: #838181;
-        }
+      & a:hover {
+        background-color: #838181;
       }
     }
   }

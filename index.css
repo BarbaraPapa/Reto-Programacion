@@ -64,5 +64,8 @@ body {
       text-decoration: none;
       color: #ff000085;
     }
+    & p{
+      margin-bottom: 0.5rem;
+    }
   }
 }

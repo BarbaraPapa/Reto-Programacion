@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia 26</title>
+    <link rel="stylesheet" href="./dia26.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dia 26</h1>
+      <h2>
+        Crea un mensaje emergente al pulsar un botón, que desaparezca al pulsar
+        fuera del mensaje.
+      </h2>
+    </header>
+    <main>
+      <button popovertarget="message" popovertargetaction="toggle">
+        Click aquí
+      </button>
+      <div id="message" popover>
+        <p>
+          Esta ventana fue creada usando el atributo <span>popover</span>.
+          Asignamos un <span>id</span> al <span>contenedor</span> de la ventana
+          y un atributo <span>popover</span>. Creamos un <span>botón</span> que
+          servirá para mostrar la ventana, al que le asignamos un atributo
+          <span>popovertarget</span> con un valor <span>igual al id</span> de la
+          ventana y un atributo <span>popovertargetaction="toggle"</span>.
+          Dentro del contenedor podemos añadir, por ejemplo, un párrafo como
+          este. De esta forma cuando hagamos clic en el botón se abrirá la
+          ventana y al volver a hacer clic en el botón o fuera de la ventana, se
+          cerrará.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

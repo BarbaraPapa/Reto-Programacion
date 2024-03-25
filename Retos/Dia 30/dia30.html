@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia 30</title>
+    <link rel="stylesheet" href="./dia30.css" />
+    <link rel="stylesheet" href="../../utility.css">
+  </head>
+  <body>
+    <header>
+      <h1>Dia 30</h1>
+      <h2>
+        Carga una librería Javascript de confetti y lánzalo cuando pulses en un
+        botón. Requiere algo de Javascript.
+      </h2>
+      <a class="volver" href="https://barbarapapa.github.io/Reto-Programacion/">⬅ Volver</a>
+    </header>
+    <main>
+      <canvas id="confetti"></canvas>
+      <button id="confettiButton">Confetti</button>
+    </main>
+
+    <!-- https://www.npmjs.com/package/js-confetti -->
+    <!-- libreria -->
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+
+    <script>
+      const button = document.querySelector("#confettiButton");
+      const canvas = document.querySelector("#confetti");
+      const jsConfetti = new JSConfetti();
+      button.addEventListener("click", () => {
+        jsConfetti.addConfetti({
+          emojis: ["🦄", "🐼", "🩷", "🎉", "💙", "⭕", "🤖", "🐤", "🌈", "🥑"],
+          emojiSize: 30,
+          confettiNumber: 500,
+        })
+      });
+    </script>
+  </body>
+</html>

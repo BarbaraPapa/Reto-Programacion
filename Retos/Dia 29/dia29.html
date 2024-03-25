@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia 29</title>
+    <link rel="stylesheet" href="./dia29.css" />
+    <link rel="stylesheet" href="../../utility.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dia 29</h1>
+      <h2>
+        Crea un sistema de pestañas (tabs) para mostrar información. Necesita
+        algo de Javascript.
+      </h2>
+      <a class="volver" href="https://barbarapapa.github.io/Reto-Programacion/"
+        >⬅ Volver</a
+      >
+    </header>
+    <main>
+      <button id="toggleButton">Mostrar sección 2</button>
+      <section>
+        <h1>Sección 1</h1>
+        <p>
+          Con el atributo <span>hidden</span> hacemos desaparecer visualmente un
+          elemento HTML. Cuando lo agregamos a un elemento, el mismo tendrá un
+          <span>display:none</span> por defecto.
+        </p>
+      </section>
+      <section hidden>
+        <h1>Sección 2</h1>
+        <p>Usamos un botón para permitir al usuario seleccionar secciones. Necesitamos <span>javascript</span> para que el botón interactúe con las secciones.</p>
+      </section>
+    </main>
+
+    <!-- javascript -->
+    <script>
+      const [section1, section2] = document.querySelectorAll("section");
+      const button = document.querySelector("button");
+
+      button.addEventListener("click", function () {
+        if (section1.hasAttribute("hidden")) {
+          button.textContent = "Mostrar sección 2";
+        } else {
+          button.textContent = "Mostrar sección 1";
+        }
+        section1.toggleAttribute("hidden");
+        section2.toggleAttribute("hidden");
+      });
+    </script>
+  </body>
+</html>

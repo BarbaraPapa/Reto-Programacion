@@ -1,12 +1,11 @@
-main,
-section {
+main {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   gap: 2rem;
   margin-top: 3rem;
   max-width: 1500px;
-  margin: 0 auto;
+  margin: 2rem auto;
 
   & iframe {
     border-radius: 0.2rem;
@@ -14,13 +13,51 @@ section {
     aspect-ratio: 16 / 9;
     width: 650px;
   }
-
   & .container {
     font-size: 1.5rem;
     max-width: 50rem;
     background-color: var(--background-ligth);
     padding: 2rem;
     border-radius: 0.2rem;
+
+    & h2 {
+      font-size: 1.5rem;
+      color: #021b6f;
+    }
+
+    & p {
+      margin-top: 1rem;
+
+      & span {
+        color: #fb4646;
+      }
+    }
+
+    & ul {
+      margin-left: 1rem;
+      & li {
+        color: #021b6f;
+      }
+    }
+  }
+
+}
+
+section{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1500px;
+  margin: 2rem auto;
+
+  & article {
+    font-size: 1.5rem;
+    max-width: 50rem;
+    background-color: var(--background-ligth);
+    padding: 2rem;
+    border-radius: 0.2rem;
+    margin-bottom: 10rem;
 
     & h2 {
       font-size: 1.5rem;

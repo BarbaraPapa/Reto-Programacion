@@ -18,13 +18,13 @@ body {
       font-size: 3rem;
     }
 
-    & img{
+    & img {
       max-width: 70rem;
     }
   }
 
   & nav {
-   padding-bottom: 10rem;
+    padding-bottom: 10rem;
     max-width: 80rem;
     margin: 0 auto;
 
@@ -32,7 +32,7 @@ body {
       display: flex;
       justify-content: center;
       padding: 2rem;
-
+      
       & li {
         list-style-type: none;
         width: 10rem;
@@ -55,16 +55,16 @@ body {
     }
   }
 
-  footer{
+  footer {
     background-color: black;
     color: #7c7c7c;
     text-align: center;
     padding: 1rem;
-    & a{
+    & a {
       text-decoration: none;
       color: #ff000085;
     }
-    & p{
+    & p {
       margin-bottom: 0.5rem;
     }
   }

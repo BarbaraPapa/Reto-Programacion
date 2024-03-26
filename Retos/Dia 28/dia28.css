@@ -1,0 +1,12 @@
+p {
+  margin: 0 auto;
+  font-size: 1.5rem;
+  max-width: 50rem;
+  background-color: var(--background-ligth);
+  padding: 2rem;
+  border-radius: 1rem;
+
+  & span {
+    color: var(--span);
+  }
+}
